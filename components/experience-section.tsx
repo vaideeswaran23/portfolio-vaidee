@@ -96,7 +96,7 @@ export function ExperienceSection() {
         >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Professional Experience</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            6+ years of building scalable solutions across fintech, SaaS, and enterprise domains
+            7+ years of building scalable solutions across fintech, SaaS, and enterprise domains
           </p>
         </motion.div>
 
@@ -178,6 +178,25 @@ export function ExperienceSection() {
             ))}
           </div>
         </div>
+
+        {/* View Full Resume Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="mt-16 text-center"
+        >
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 text-lg font-medium text-primary-foreground bg-primary rounded-lg hover:bg-primary/90 transition-colors duration-200"
+          >
+            View Full Resume
+            <ArrowUpRight className="h-5 w-5" />
+          </a>
+        </motion.div>
       </div>
     </section>
   )

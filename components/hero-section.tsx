@@ -51,9 +51,17 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto text-pretty"
+            className="text-xl md:text-2xl text-muted-foreground mb-2 max-w-3xl mx-auto text-pretty"
           >
-            Senior Software Developer | Building scalable solutions with Java, Spring Boot, Microservices, and Cloud
+            Back End Engineer
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-xl md:text-base text-muted-foreground mb-8 max-w-3xl mx-auto text-pretty"
+          >
+            I build scalable and robust backend apps with Java, NodeJs, Spring Boot, Microservices, and Cloud
             Technologies
           </motion.p>
 
